@@ -1,0 +1,14 @@
+{
+    "sim_results_file_string": "/Users/hosseinsharifi/OneDrive - University of Kentucky/Github/fenics/FEniCS-Myosim/forked/FEniCS-Myosim/demos/base/sim_output/data.csv",
+    "output_image_handler":
+    [
+        {
+            "template_instruction_str": "../working_dir/base_sim/sim_inputs/temp/template_base.json",
+            "output_image_str": "../working_dir/base_sim/sim_output/base_image_new.png"
+        },
+        {
+            "template_instruction_str": "../working_dir/base_sim/sim_inputs/temp/template_base_pv.json",
+            "output_image_str": "../working_dir/base_sim/sim_output/base_image_new_pv.png"
+        }
+    ]
+}
