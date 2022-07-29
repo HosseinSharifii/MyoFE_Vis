@@ -1,0 +1,109 @@
+{
+    "layout":
+    {
+        "fig_width": 8,
+        "top_margin": 0,
+        "left_margin": 0,
+        "right_margin": 0,
+        "panel_height": 5,
+        "grid_wspace": 100
+    },
+    "x_display":{
+        "global_x_field": "time",
+        "label": "Time (s)",
+        "global_x_ticks": [3.5,4.5]
+    },
+    "formatting":
+    {
+        "x_label_fontsize": 14,
+        "y_label_fontsize": 14,
+        "tick_fontsize": 12,
+        "legend_fontsize": 10,
+        "y_label_pad": 50,
+        "legend_bbox_to_anchor": [1.0, 1.05],
+        "palette": "muted",
+        "patch_alpha": 0.5
+    },
+    "processing":
+    {
+        "envelope_n": 200
+    },
+    
+    "panels":
+    [
+       
+        {
+            "column": 1,
+            "y_info":
+            {
+                "label":"Ventricular\npressure\n(mmHg)",
+                "series":
+                [
+                    {
+                        "field": "pressure_2_cores_1",
+                        "style": "line",
+                        "field_label": "2 cores"
+                    },
+                    {
+                        "field": "pressure_1_cores_no_mpi_1",
+                        "style": "line",
+                        "field_label": "1 core"
+                    }
+
+                ]
+            }
+        },
+        {
+            "column": 1,
+            "y_info":
+            {
+                "label":"Relative difference\npressure\n(%)",
+                "series":
+                [
+                    {
+                        "field": "dif_p_2_1",
+                        "style": "line",
+                        "field_label": "Delta P (2 cores)"
+                    }
+                ]
+            }
+        },
+        {
+            "column": 1,
+            "y_info":
+            {
+                "label":"Ventricular\nvolume\n(liters)",
+                "series":
+                [
+                    {
+                        "field": "volume_2_cores_1",
+                        "style": "line",
+                        "field_label": "2 cores"
+                    },
+                    {
+                        "field": "volume_1_cores_no_mpi_1",
+                        "style": "line",
+                        "field_label": "1 core"
+                    }
+
+                ]
+            }
+        },
+        {
+            "column": 1,
+            "y_info":
+            {
+                "label":"Relative difference\nvolume\n(%)",
+                "series":
+                [
+                    {
+                        "field": "dif_v_2_1",
+                        "style": "line",
+                        "field_label": "Delta V (2 cores)"
+                    }
+                ]
+            }
+        }
+       
+    ]
+}
